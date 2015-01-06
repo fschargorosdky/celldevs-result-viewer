@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ConfigFramework>
+   <Doc> Battle ship model. </Doc>
+      <Files>
+        <File ftype="sup">battle1.val</File>
+	<File ftype="ma">battle1.ma</File>
+	<File ftype="inc">rules.inc</File>
+      </Files>
+   <Options>
+      <TimeOp>00:00:02:000</TimeOp>
+      <ParsingOp>false</ParsingOp>
+   </Options>
+   <DCDpp>
+      <Servers>
+         <Server IP="localhost" PORT="8080">
+	    <Zone>battle(0,0,0)..(9,9,5)</Zone>
+	 </Server>
+      </Servers>
+   </DCDpp>
+</ConfigFramework>

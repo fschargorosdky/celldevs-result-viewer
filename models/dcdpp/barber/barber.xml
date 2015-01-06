@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ConfigFramework>
+   <Doc> This DEVS model simulates Barber shop . </Doc>
+      <Files>
+         <File ftype="ev">barber.ev</File>
+	 <File ftype="ma">barber.ma</File>
+
+         <File ftype="src">Reception.cpp</File>
+         <File ftype="hdr" class="Reception">Reception.h</File>
+
+         <File ftype="src">Checkhair.cpp</File>
+         <File ftype="hdr" class="Checkhair">Checkhair.h</File>
+
+         <File ftype="src">Cuthair.cpp</File>
+         <File ftype="hdr" class="Cuthair">Cuthair.h</File>
+
+      </Files>
+   <Options>
+      <TimeOp>null</TimeOp>
+      <ParsingOp>false</ParsingOp>
+   </Options>
+   <DCDpp>
+      <Servers>
+         <Server IP="Localhost" PORT="8080">
+	    <MODEL>reception</MODEL>
+            <MODEL>cuthair</MODEL>
+            <MODEL>checkhair</MODEL>
+	 </Server>
+      </Servers>
+   </DCDpp>
+</ConfigFramework>
