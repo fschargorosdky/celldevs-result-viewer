@@ -3,8 +3,8 @@ components : simpledla
 
 [simpledla]
 type : cell
-width : 50
-height : 50
+width : 200
+height : 200
 delay : transport
 defaultDelayTime  : 100
 border : wrapped 
@@ -16,12 +16,12 @@ neighbors : 			simpledla(1,-2) 	simpledla(1,-1) 	simpledla(1,0) 	simpledla(1,1) 
 neighbors : 						simpledla(2,-1) 	simpledla(2,0) 	simpledla(2,1)  
 neighbors :		 								simpledla(3,0)
 initialvalue : 0
-initialrowvalue : 24     00000000000000000000000010000000000000000000000000
+initialrowvalue : 99    00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 localtransition : simpledla-rule
-zone : upperBorder { (0,0)..(0,49) }
-zone : lowerBorder { (49,0)..(49,49) }
-zone : leftBorder { (1,0)..(48,0) }
-zone : rightBorder { (1,49)..(48,49) }
+zone : upperBorder { (0,0)..(0,199) }
+zone : lowerBorder { (199,0)..(199,199) }
+zone : leftBorder { (1,0)..(198,0) }
+zone : rightBorder { (1,199)..(198,199) }
 
 [simpledla-rule]
 % the particle becomes fixed if an adjacent cell contains fixed particle
